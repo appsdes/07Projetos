@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cliente" />
+
+    <EditText
+        android:id="@+id/editTextNumConta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número da Conta"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextSaldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Saldo"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupConta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonPoupanca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Conta Poupança" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEspecial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conta Especial" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextDiaRendimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dia de Rendimento"
+        android:inputType="number"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTextTaxaRendimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Taxa de Rendimento (%)"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTextLimite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Limite"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTextValorOperacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor da Operação"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonCriarConta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar Conta" />
+
+    <Button
+        android:id="@+id/buttonSacar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sacar" />
+
+    <Button
+        android:id="@+id/buttonDepositar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Depositar" />
+
+    <Button
+        android:id="@+id/buttonMostrarDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Dados" />
+
+</LinearLayout>
